@@ -1,0 +1,89 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 1rem;
+    background-color: white;
+}
+.card .info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+}
+.card .info img{
+    width: 25%;
+}
+.card .info h2{
+    color: #003E7E;
+    margin-bottom: 0;
+}
+.card .info p{
+    color: #003E7E;
+    font-size: 65%;
+}
+.card .info form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+.card .info form .userInfo{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.card .info form .email{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.card .info form label{
+    color: #003E7E;
+    font-size: medium;
+}
+.card .info form input[type="text"],
+input[type="email"],
+input[type="password"]{
+    height: 2.5rem;
+    border: 1px solid rgb(180, 180, 180);
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+.card .info form p{
+    font-size: 60%;
+}
+.card .info form .userInfo .error{
+    color: red;
+}
+.card .info form .confirmation{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.card .info form .confirmation .larger-checkbox {
+    transform: scale(1.5); 
+  }
+.card .info form button{
+    background-color:  #003E7E;
+    color:white;
+    width: 25%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+}
+#submitButton {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  #myForm:valid #submitButton {
+    pointer-events: auto;
+    opacity: 1;
+  }
+.card img{
+    width: 40%;
+}
